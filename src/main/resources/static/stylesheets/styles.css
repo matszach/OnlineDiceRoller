@@ -1,0 +1,47 @@
+/* default reset */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #cceecc;
+}
+
+
+h1{
+    margin: 25px;
+}
+
+h3{
+    margin: 20px;
+}
+
+h4{
+    margin: 15px;
+    padding: 10px;
+    width: 400px;
+    min-height: 200px;
+    border-style: solid;
+    border-color: #88ff88;
+}
+
+
+
+button{
+    background-color: #44ff44;
+    opacity: 0.6;
+    color: black;
+    font-size: 16px;
+    border: none;
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+button:hover{
+    transition: 0.3s;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+footer{
+    margin-top: 50px;
+}

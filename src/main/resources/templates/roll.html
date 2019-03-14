@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- enables thymeleaf tags -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/stylesheets/styles.css}" />
+    <meta charset="UTF-8">
+    <title>Dice Roller</title>
+</head>
+
+<body >
+    <div align="center" >
+
+        <h1>Roll Some Dice</h1>
+
+        <form th:action="roll"  method="post">
+
+
+            <h3>
+                <label>Number of Rolls</label>
+                <br>
+                <input type="number" name="numOfDice"/>
+            </h3>
+
+
+            <table>
+                <tr>
+                    <td> <button type="submit" name="dieType" value="D2">Roll D2s</button> </td>
+                    <td> <button type="submit" name="dieType" value="D3">Roll D3s</button> </td>
+                    <td> <button type="submit" name="dieType" value="D4">Roll D4s</button> </td>
+                    <td> <button type="submit" name="dieType" value="D6">Roll D6s</button> </td>
+                </tr>
+                <tr>
+                    <td> <button type="submit" name="dieType" value="D8">Roll D8s</button> </td>
+                    <td> <button type="submit" name="dieType" value="D10">Roll D10s</button> </td>
+                    <td> <button type="submit" name="dieType" value="D12">Roll D12s</button> </td>
+                    <td> <button type="submit" name="dieType" value="D100">Roll D100s</button> </td>
+                </tr>
+            </table>
+
+        </form>
+
+        <h3>Results :</h3>
+        <h4 th:text="${message}"></h4>
+
+
+        <footer>Created by ŁK</footer>
+
+    </div>
+</body>
+
+</html>

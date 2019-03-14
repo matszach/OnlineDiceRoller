@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">   <!-- enables thymeleaf tags -->
+
+
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/stylesheets/styles.css}" />
+    <meta charset="UTF-8">
+    <title>Dice Roller</title>
+</head>
+
+<body>
+
+    <div align="center">
+
+        <h1>Welcome to Online Dice Roller</h1>
+
+        <div>
+            <form th:action="roll">
+                <button type="submit">Proceed</button>
+            </form>
+        </div>
+
+
+
+
+        <footer>Created by ŁK</footer>
+
+    </div>
+
+</body>
+
+</html>
